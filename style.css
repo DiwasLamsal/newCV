@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	background: rgb(0,0,0);
+	overflow: hidden;
+}
+
+
+
+/* HAMBURGER NAV ICON*/
+
+.hamburger{
+		cursor: pointer;
+		display: inline-block;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+	}
+
+	.line1, .line2, .line3{
+		width: 30px;
+    	height: 4px;
+		background: white;
+		margin-top: 3px;
+		transition: .3s;
+		box-shadow: 1px 1px 10px;
+	}
+
+	.change .line1{
+		transform: translate(-3px, 10px) rotate(45deg);
+		
+
+	}
+
+	.change .line2{
+		opacity: 0;
+
+	}
+
+	.change .line3{
+		transform: translate(-3px, -4px) rotate(-45deg) ;
+	}
+
+/*END OF HAMBURGER NAV ICON*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Vid{
+	width: 100%;
+	filter: brightness(55%);
+	position: fixed;
+	z-index: -100;
+	top: 0;
+}
+
+
+
+.homeheading {
+	text-align: center;
+	font-size: calc(6vw + 4px);
+	color: white;
+	margin-top: 10%;
+	user-select: none;
+
+}
+
+.hometext {
+	text-align: center;
+	font-size: calc(1.5vw + 5px);
+	color: white;
+	margin-left:50px;
+	margin-right: 50px;
+}
+
+
+.CVButton {
+
+	margin: auto;
+	margin-top: 10%;
+	width: auto;
+	text-align: center;
+	font-size: calc(1vw + 5px);
+}
+
+.CVButton > a {
+	color: white;
+	text-decoration: none;
+	background: rgb(250, 130, 0);
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	border-radius: 3px;
+	transition: background .5s;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+
+}
+
+.CVButton > a:hover {
+	background: rgba(205, 100, 0);
+}
+
+@media screen and (max-width: 650px) {
+    body {
+    	margin-top: 70px;
+    	overflow-y: auto;
+    }
+
+
+
+    .hamburger{
+		top: 10px;
+		right: 10px;
+	}
+
+    .line1, .line2, .line3{
+		width: calc(20px + 1vw);
+	}
+
+
+
+
+    #Vid{
+    	width: 200%;
+    	left: -150px;
+    }
+}
