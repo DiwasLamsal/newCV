@@ -1,5 +1,16 @@
 
-	function sidebarFunction(x) {
+	
+
+window.onload = function(){
+
+  document.querySelector(".load").style.display="none";
+
+};
+
+
+
+
+  function sidebarFunction(x) {
 	 	x.classList.toggle("change");
 
 
