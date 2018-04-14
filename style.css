@@ -197,11 +197,10 @@ body{
 
 	.navmenuul a{
 		text-align: center;
-		padding: 10px;
-		padding-top: calc(2vw + 5px);
-		padding-bottom: calc(2vw + 5px);
+		padding-top: 20px;
+		padding-bottom: 20px;
 		font-size:(1vw + 5px);
+		
+
 	}
-
-
 }
