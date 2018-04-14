@@ -59,6 +59,7 @@ body{
 	border-left: 3px inset rgba(200, 200, 100, 0.7);
 	box-shadow: 10px 10px 100px 10px;
 	margin-right: -5px;
+	background: linear-gradient(to bottom right, purple, blue, lightblue);
 }
 
 
