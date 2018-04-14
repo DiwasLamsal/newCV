@@ -11,7 +11,7 @@
     } 
     else {
         z.style.width = "100%";
-    	navmenuul.style.transform = "scale(1.1)";	
+    	navmenuul.style.transform = "scale(1)";	
     }
 
 	}
