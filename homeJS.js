@@ -5,13 +5,13 @@
 
 	 	 var z = document.querySelector(".nav");
     	 var navmenuul = document.querySelector(".navmenuul");
-    if (z.style.width === "300px") {
+    if (z.style.width === "100%") {
         z.style.width = "0px";
-    	navmenuul.style.visibility = "hidden";
+    	navmenuul.style.transform = "scale(0)";
     } 
     else {
-        z.style.width = "300px";
-    	navmenuul.style.visibility = "visible";	
+        z.style.width = "100%";
+    	navmenuul.style.transform = "scale(1)";	
     }
 
 	}

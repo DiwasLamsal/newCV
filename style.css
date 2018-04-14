@@ -50,7 +50,7 @@ body{
 
 
 .nav {
-	width: 0px;
+	width: 0%;
 	height: 700px;
 	position: fixed;
 	right: 0;
@@ -64,13 +64,14 @@ body{
 
 
 	.navmenuul {
-		margin-top: 30px;
+		margin-top: calc(15vw + 70px);
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		list-style: none;
 		justify-content: center;
-		transition: visibility .3s;	
-
+		transition: transform 1s;	
+		overflow: hidden;
+		transform: scale(0);
 	}
 
 
@@ -78,15 +79,15 @@ body{
 		color:white;
 		text-decoration: none;
 		text-align: center;
-		padding: 10px;
-		padding-top: calc(2vw + 5px);
-		padding-bottom: calc(2vw + 5px);
+		padding: calc(3vw + 15px);
 		font-size:(1vw + 5px);
-		transition: color 1s;
+		transition: color 1s, background 1s;
 
 	}
+
 	.navmenuul a:hover{
 		color: rgb(240, 200, 100);
+		background: rgba(0,0,0,0.3);
 	}
 
 
@@ -181,6 +182,25 @@ body{
     #mobileBackground{
     	display: inline;
     }
+
+/* NAVMENU IN MOBILE DEVICES */
+
+	.navmenuul {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow: auto;
+	}
+
+
+	.navmenuul a{
+		text-align: center;
+		padding: 10px;
+		padding-top: calc(2vw + 5px);
+		padding-bottom: calc(2vw + 5px);
+		font-size:(1vw + 5px);
+	}
 
 
 }
