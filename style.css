@@ -70,7 +70,7 @@ body{
 		flex-direction: row;
 		list-style: none;
 		justify-content: center;
-		transition: transform 1s;	
+		transition: transform 2s;	
 		overflow: hidden;
 		transform: scale(0);
 	}
