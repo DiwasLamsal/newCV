@@ -1,5 +1,5 @@
 
-	function myFunction(x) {
+	function sidebarFunction(x) {
 	 	x.classList.toggle("change");
 
 

@@ -98,8 +98,16 @@ body{
 	top: 0;
 }
 
-section {
-	transition: margin 1s;
+
+
+#mobileBackground{
+	display: none;
+	filter: brightness(50%);
+	position: fixed;
+	z-index: -100;
+	top: 0;
+	width: 200%;
+
 }
 
 
@@ -166,11 +174,13 @@ section {
 		width: calc(20px + 1vw);
 	}
 
-
-
-
     #Vid{
-    	width: 200%;
-    	left: -150px;
+    	display: none;
     }
+
+    #mobileBackground{
+    	display: inline;
+    }
+
+
 }
