@@ -18,6 +18,7 @@ body{
 		position: fixed;
 		top: 20px;
 		right: 20px;
+		z-index: 100;
 	}
 
 	.line1, .line2, .line3{
@@ -25,7 +26,7 @@ body{
     	height: 4px;
 		background: white;
 		margin-top: 3px;
-		transition: .3s;
+		transition:transform .3s;
 		box-shadow: 1px 1px 10px;
 	}
 
@@ -48,29 +49,62 @@ body{
 
 
 
+.nav {
+	width: 0px;
+	height: 700px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition: width 1s, background 1s;
+	border-left: 3px inset rgba(200, 200, 100, 0.7);
+	box-shadow: 10px 10px 100px 10px;
+	margin-right: -5px;
+}
 
 
+	.navmenuul {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		justify-content: center;
+		transition: visibility .3s;	
+
+	}
 
 
+	.navmenuul a{
+		color:white;
+		text-decoration: none;
+		text-align: center;
+		padding: 10px;
+		padding-top: calc(2vw + 5px);
+		padding-bottom: calc(2vw + 5px);
+		font-size:(1vw + 5px);
+		transition: color 1s;
 
-
-
-
+	}
+	.navmenuul a:hover{
+		color: rgb(240, 200, 100);
+	}
 
 
 #Vid{
 	width: 100%;
-	filter: brightness(55%);
+	filter: brightness(50%);
 	position: fixed;
 	z-index: -100;
 	top: 0;
 }
 
+section {
+	transition: margin 1s;
+}
 
 
 .homeheading {
 	text-align: center;
-	font-size: calc(6vw + 4px);
+	font-size: calc(6vw + 8px);
 	color: white;
 	margin-top: 10%;
 	user-select: none;
@@ -79,7 +113,7 @@ body{
 
 .hometext {
 	text-align: center;
-	font-size: calc(1.5vw + 5px);
+	font-size: calc(1.5vw + 7px);
 	color: white;
 	margin-left:50px;
 	margin-right: 50px;
@@ -92,7 +126,7 @@ body{
 	margin-top: 10%;
 	width: auto;
 	text-align: center;
-	font-size: calc(1vw + 5px);
+	font-size: calc(1.5vw + 5px);
 }
 
 .CVButton > a {
@@ -101,13 +135,14 @@ body{
 	background: rgb(250, 130, 0);
 	padding-right: 20px;
 	padding-left: 20px;
-	padding-top: 1vw;
-	padding-bottom: 1vw;
+	padding-top: calc(1vw + 5px);
+	padding-bottom: calc(1vw + 5px);
 	border-radius: 3px;
 	transition: background .5s;
 	box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
-
 }
+
+
 
 .CVButton > a:hover {
 	background: rgba(205, 100, 0);
@@ -116,7 +151,7 @@ body{
 @media screen and (max-width: 650px) {
     body {
     	margin-top: 70px;
-    	overflow-y: auto;
+    	overflow: scroll;
     }
 
 
