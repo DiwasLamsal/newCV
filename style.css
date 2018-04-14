@@ -64,7 +64,7 @@ body{
 
 
 	.navmenuul {
-		margin-top: calc(15vw + 70px);
+		margin-top: calc(15vw + 50px);
 		display: flex;
 		flex-direction: row;
 		list-style: none;
@@ -80,14 +80,14 @@ body{
 		text-decoration: none;
 		text-align: center;
 		padding: calc(3vw + 15px);
-		font-size:(1vw + 5px);
+		font-size:calc(1.5vw + 5px); 
 		transition: color 1s, background 1s;
 
 	}
 
 	.navmenuul a:hover{
 		color: rgb(240, 200, 100);
-		background: rgba(0,0,0,0.3);
+		background: rgba(0,0,0,0.2);
 	}
 
 
