@@ -55,12 +55,12 @@ body{
 	position: fixed;
 	right: 0;
 	top: 0;
-	transition: width 1s, background 1s;
+	transition: width .3s;
 	transition-timing-function: ease-in-out;
 	border-left: 3px inset rgba(200, 200, 100, 0.7);
 	box-shadow: 10px 10px 100px 10px;
 	margin-right: -5px;
-	background: linear-gradient(to bottom right, purple, blue, lightblue);
+	background: linear-gradient(to bottom right, purple, blue, darkblue, lightblue);
 }
 
 
@@ -190,9 +190,11 @@ body{
 
 /* NAVMENU IN MOBILE DEVICES */
 
+
 	.navmenuul {
 		display: none;
 	}
+
 
 	.navmenumobile {
 	display: flex;
