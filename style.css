@@ -95,12 +95,17 @@
 
 	}
 
-	.navmenuul a:hover{
+	.navmenuul a:hover, .navmenumobile a:hover{
 		color: rgb(240, 200, 100);
 		background: rgba(0,0,0,0.2);
 	}
 
 
+
+
+.navmenumobile {
+	display: none;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVIGATION MENU END~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -202,29 +207,33 @@
 	}
 
     #Vid{
-    	display: none;
+    	width: 200%;
     }
 
-    #mobileBackground{
-    	display: inline;
-    }
 
 /* NAVMENU IN MOBILE DEVICES */
 
 	.nav {
 		transition: width .1s;
-		transition-timing-function: linear;
+	}
+
+	.navmenuul {
+		display: none;
 	}
 
 
-.navmenuul {
+.navmenumobile {
+	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	margin-top: 50px;
 	text-align: center;
 	overflow: hidden;
 	}
 
-.navmenuul a {
+.navmenumobile a {
+	color: white;
+	text-decoration: none;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 14px;
