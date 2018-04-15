@@ -1,15 +1,16 @@
 
 	
+// THIS IS THE JAVASCRIPT USED FOR THE CV
 
+
+//FOR THE LOADER
 window.onload = function(){
-
   document.querySelector(".load").style.display="none";
-
 };
 
 
 
-
+//FOR THE SIDEBAR(HAMBURGER)
   function sidebarFunction(x) {
 	 	x.classList.toggle("change");
 
@@ -27,7 +28,7 @@ window.onload = function(){
 
 	}
 
-
+//FOR THE BACKGROUND
 	(function() {
   		var video = document.getElementById("Vid");
   		video.addEventListener( "canplay", function() {
