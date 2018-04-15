@@ -68,9 +68,8 @@ body{
 		margin-top: calc(15vw + 50px);
 		display: flex;
 		flex-direction: row;
-		list-style: none;
 		justify-content: center;
-		transition: transform 2s;	
+		transition: transform .5s;	
 		overflow: hidden;
 		transform: scale(0);
 	}
@@ -86,10 +85,15 @@ body{
 
 	}
 
-	.navmenuul a:hover{
+	.navmenuul a:hover, .navmenumobile a:hover{
 		color: rgb(240, 200, 100);
 		background: rgba(0,0,0,0.2);
 	}
+
+
+.navmenumobile {
+	display: none;
+}
 
 
 #Vid{
@@ -156,7 +160,7 @@ body{
 
 
 .CVButton > a:hover {
-	background: rgba(205, 100, 0);
+	background: rgb(205, 100, 0);
 }
 
 @media screen and (max-width: 650px) {
@@ -187,20 +191,23 @@ body{
 /* NAVMENU IN MOBILE DEVICES */
 
 	.navmenuul {
-		margin-top: 30px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		overflow: auto;
+		display: none;
 	}
 
-
-	.navmenuul a{
-		text-align: center;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		font-size:(1vw + 5px);
-		
-
+	.navmenumobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 50px;
+	text-align: center;
 	}
+
+.navmenumobile a {
+	color: white;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 14px;
+}
+
 }
