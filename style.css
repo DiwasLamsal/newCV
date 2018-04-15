@@ -95,17 +95,12 @@
 
 	}
 
-	.navmenuul a:hover, .navmenumobile a:hover{
+	.navmenuul a:hover{
 		color: rgb(240, 200, 100);
 		background: rgba(0,0,0,0.2);
 	}
 
 
-
-
-.navmenumobile {
-	display: none;
-}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVIGATION MENU END~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -218,25 +213,18 @@
 
 	.nav {
 		transition: width .1s;
-	}
-
-	.navmenuul {
-		display: none;
+		transition-timing-function: linear;
 	}
 
 
-.navmenumobile {
-	display: flex;
+.navmenuul {
 	flex-direction: column;
-	justify-content: center;
 	margin-top: 50px;
 	text-align: center;
 	overflow: hidden;
 	}
 
-.navmenumobile a {
-	color: white;
-	text-decoration: none;
+.navmenuul a {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 14px;
