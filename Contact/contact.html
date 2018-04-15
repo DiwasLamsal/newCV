@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
 	<title>Contact Me</title>
-	<link rel = "stylesheet" href="contact.css" type="text/css">
-	<link rel = "stylesheet" href="../loader.css" type="text/css">
-	<link rel = "stylesheet" href="../navbar.css" type="text/css">
-	<link rel = "stylesheet" href="../footer.css" type = "text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
-	<script src ="../jquery-3.3.1.min.js"></script>
-	<script src = "contact.js"></script>
-	<script src = "../Javascript.js"></script>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+	<link rel = "stylesheet" type = "text/css" href = "../loader.css">
+	<link rel = "stylesheet" type = "text/css" href = "contact.css">
+	<script src = "../homeJS.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
 </head>
-<body>
+<body class = "contactBody">
+
 <!--################### -LOADER SECTION- #################-->	
-<!--################### -DO NOT EDIT- #################-->	
+<!--################### -MUST NOT BE EDITED- #################-->
 	  <div class="load">
 	  	<div class = "loader">
 	  	<div class ="first bar"></div>
@@ -30,72 +28,98 @@
 	  	<div class ="eighth bar"></div>  
 	  </div>
 	  </div>
-<!--################### -END OF LOADER SECTION- #################-->
-<!--################### -NAVBAR SECTION- #################-->	
-	<nav>
-		<div class ="topbar">
-			<div class = "navavatar"><a href="../index.html"><img src = "../myAvatar lowres.png"></a></div><!--Avatar from www.avatarmaker.com-->
-			<div class = "welcometext"><h2>Contact Me</h2></div>
-			<div class="hamburger">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
+<!--################### -END OF LOADER SECTION- #################-->	
+	<header>
+	<!--################### - HAMBURGER ICON- #################-->	
+
+	<div class="hamburger" onclick="sidebarFunction(this)">
+ 		 <div class="line1"></div>
+ 		 <div class="line2"></div>
+  		<div class="line3"></div>
+	</div>
+	
+
+
+	<!--################### -NAVBAR SECTION- #################-->
+	
+	<div class = "nav">
+			<div class = "navmenuul">
+				<a href="../index.html">Home</a>
+				<a href="../About/about.html">About</a>
+				<a href="../CV/CV.html">CV</a>
+				<a href="../Contact/contact.html">Contact</a>
+				<a href="../Social/social.html">Social</a>
+				<a href ="../Report/report.html">Report</a>
 			</div>
-		</div>
+		
 
-		<div class = "navmenu">
-			<ul class = "navmenuul">
-				<a href="../index.html"><li class = "home">Home</li></a>
-				<a href="../About/about.html"><li class = "about">About</li></a>
-				<a href="../CV/CV.html"><li class = "cv">CV</li></a>
-				<a href="../Contact/contact.html"><li class = "contact">Contact</li></a>
-				<a href ="../MGP/models_gp.html"><li class = "modelsgp">MGP</li></a>
-				<a href="../Social/social.html"><li class = "social">Social</li></a>
+		<!--A Separate navmenu has been used for mobile devices for optimization across mobile devices as the other one caused lags-->
+			<div class = "navmenumobile">
+				<a href="../index.html">Home</a>
+				<a href="../About/about.html">About</a>
+				<a href="../CV/CV.html">CV</a>
+				<a href="../Contact/contact.html">Contact</a>
+				<a href="../Social/social.html">Social</a>
+				<a href ="../Report/report.html">Report</a>
+			</div>
+	</div>
+	</header>
 
-			</ul>
-		</div>
-	</nav>
-<!--################### -END OF NAVBAR SECTION- #################-->	
+	<!--################### -END OF NAVBAR SECTION- #################-->
+
+
+
+
+
+
+
+
+
+
 <!--################### - CONTENT SECTION - #################-->	
 	
-	<section>
+	<section class = "contactSection">
 
 
-		<div class = "box">
+	<div class = "contactBoxOne">
+		
+						<h1 class = "contactHeading">Let's Talk...</h1>
+						<p class = "contactParagraph">If you have any questions, suggestions, or want to get in touch, feel free to leave a message.</p>
 
-					<div class = "infobox">
-
-						<h1>Let's Talk...</h1>
-						<p class = "contactText" style="margin-top: 20px;">Anything you'd like to discuss?</p>
-						<p class = "contactText">If you have any questions, suggestions, or want to get in touch, feel free to leave a message.<br><br></p>
-						<p class = "contactText">Or if you'd like to talk to me directly,</p>
-						<p class = "contactText">Email: <a href = "mailto:diwas@diwaslamsal.com.np">diwas@diwaslamsal.com.np</a> /<br> <a href = "mailto:diwaslamsal123@hotmail.com"> diwaslamsal123@hotmail.com </a>/ <a href = "mailto:lamsal.diwas@yahoo.com"> lamsal.diwas@yahoo.com </a></p>
-						<br><br>
-						<p class = "contactText" style="text-align: right; font-family: 'arial';">+977-9808066424<br>Buddhanagar - 10,<br>New Baneshwor,<br>Kathmandu, Nepal.</p>
-
-
-					</div>
-				
-					<div class = "formbox"><!--This is the contact form-->
+						<div class = "form">
 						<form>
-
-							<p class = "formlabel">Full Name: </p>
-							<input type = "text" placeholder="Enter your full name..." name = "fullname" id = "name" required><br>
+							
+							<p class = "formlabel" style="margin-top: 0px;">Full Name: </p>
+							<input type = "text" placeholder="Enter your full name..." name = "fullname" id = "name" required>
 							<p class = "formlabel">Email: </p>
 							<input type = "email" placeholder="Enter your email address..." id = "email" required>
 							<p class = "formlabel">Message: </p>
 							<textarea placeholder="Enter your message..."></textarea>
-							<input type ="Submit" value="Submit" style="cursor: pointer;">
+							<div id ="submitButton"><input type ="Submit" value="Submit" style="cursor: pointer;"></div>			
+
+
 						</form>
-					</div>
-		</div>
+
+						
+						</div>
+
+						<p class = "contactParagraph" style="text-align: right;font-size: calc(.5vw + 7px);">
+						<a href = "mailto:diwaslamsal123@hotmail.com"> diwaslamsal123@hotmail.com </a>/ <a href = "mailto:lamsal.diwas@yahoo.com"> lamsal.diwas@yahoo.com </a>
+						<br>
+						+977-9808066424<br>Buddhanagar - 10,New Baneshwor, Kathmandu, Nepal.</p>
 
 
-	
-		<div class ="box">
-			<iframe src="https://www.google.com/maps/d/embed?mid=1oM1XFHyIH_jD2FLxA3EA4ZBT64XYgG8j" width="100%" height="100%" style="border:0px; min-height: 400px; box-shadow: 10px 10px 20px;"></iframe>
-		</div>
-	
+	</div>
+
+
+	<div class = "contactBoxTwo">
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14132.04285114541!2d85.32354472515512!3d27.686063774809572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQxJzA5LjgiTiA4NcKwMTknNTYuMyJF!5e0!3m2!1sen!2snp!4v1523799289749" width="100%" height="95%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	</div>
+
+
+
 
 
 
@@ -105,21 +129,14 @@
 
 <!--################### -END OF CONTENT SECTION- #################-->	
 
+
+
+
+
+
 <!--################### -	FOOTER SECTION   - #################-->	
 	
-	<footer>
-		<div class = "footer">
-			<ul class = "footerul">
-				<a href="../index.html"><li class = "home">Home</li></a>
-				<a href="../About/about.html"><li>About</li></a>
-				<a href="../CV/CV.html"><li class = "cv">CV</li></a>
-				<a href="../Contact/contact.html" class = "highlighted"><li class = "contact">Contact</li></a>
-				<a href ="../MGP/models_gp.html"><li class = "modelsgp">MGP</li></a>
-				<a href="../Social/social.html"><li class = "social">Social</li></a>
-
-			</ul>
-		</div>
-	</footer>
+	
 
 
 <!--################### - END OF FOOTER SECTION - #################-->
