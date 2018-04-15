@@ -67,9 +67,9 @@
 	top: 0;
 	transition: width .3s;
 	transition-timing-function: ease-in-out;
-	border-left: 3px inset rgba(200, 200, 100, 0.7);
+	border-right: 5px inset rgba(200, 200, 100, 0.8);
 	box-shadow: 5px 5px 100px;
-	margin-right: -5px;
+	margin-left: -5px;
 	background: linear-gradient(to bottom right, purple, blue, darkblue, lightblue);
 }
 
