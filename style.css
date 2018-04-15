@@ -217,7 +217,6 @@ body{
 /* NAVMENU IN MOBILE DEVICES */
 
 	.nav {
-		transition-delay: -1s;
 		transition: width .1s;
 	}
 
