@@ -231,6 +231,7 @@
 	justify-content: center;
 	margin-top: 50px;
 	text-align: center;
+	overflow: hidden;
 	}
 
 .navmenumobile a {
