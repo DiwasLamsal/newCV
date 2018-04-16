@@ -67,11 +67,29 @@
 
 }
 
+
 form{
 	background: rgb(250, 255, 205);
 	background-size: 100% 100%;
 	padding: 15px;
 	text-align: left;
+}
+
+
+ #name {
+	background: url('nameicon.svg') white;
+	background-repeat: no-repeat;
+	background-position: 99%;
+
+	
+}
+
+ #email {
+	background: url('emailicon.svg') white;
+	background-repeat: no-repeat;
+	background-position:99% center;
+	background-size: 24px;
+	
 }
 
 .formlabel{
@@ -80,10 +98,13 @@ form{
 }
 
 form input {
-	width: 99%;
+
 	height: 20px;
 	font-size: 15px;
 	padding: 3px;
+	padding-right: 30px;
+	width: 94%;
+
 }
 
 form textarea{
