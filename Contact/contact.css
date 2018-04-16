@@ -91,6 +91,8 @@ form textarea{
 	width: 99%;
 	height: 100px;
 	padding: 3px;
+	max-width: 99%;
+	max-height: 150px;
 }
 
 #submitButton{
