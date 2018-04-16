@@ -36,7 +36,7 @@
 	margin: 5px;
 	user-select: none;
 	width: 10%;
-	transition: border .3s, transform .3s;
+	transition: transform .3s;
 	border-radius: 50%;
 	border: calc(.5vw + 3px) solid rgba(255,255,255,0.2);
 	min-width: 60px;
@@ -46,3 +46,12 @@
 	transform: rotate(360deg) scale(1.1);
 
 }
+
+@media screen and (max-width: 650px) {
+    .socialBody {
+    	background: url('socialBackground.jpeg');
+		background-attachment: fixed;
+		background-size: contain;
+		
+
+    }
