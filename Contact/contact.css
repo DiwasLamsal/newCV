@@ -26,13 +26,13 @@
 .contactBoxOne{
 	background: linear-gradient(to bottom right, orange, #23D5AB, lightgreen);
 	background-size: 1000% 1000%;
-	animation: GradientAnimation 10s ease infinite;
+	animation: GradientAnimation 5s ease infinite;
 }
 
 @keyframes GradientAnimation {
 	0%, 100% {background-position: 0% 50%}
-	40% {background-position: 100% 50%}
-	80% {background-position: 50% 100% }
+	30% {background-position: 100% 50%}
+	60% {background-position: 50% 100% }
 }
 
 
