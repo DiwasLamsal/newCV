@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
 	<title>CV</title>
-	<link rel = "stylesheet" href="CV.css" type="text/css">
-	<link rel = "stylesheet" href="../loader.css" type="text/css">
-	<link rel = "stylesheet" href="../navbar.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
-	<link rel = "stylesheet" href="../footer.css" type = "text/css">
-	<script src ="../jquery-3.3.1.min.js"></script>
-	<script src = "../Javascript.js"></script>
-	<script src = "CV.js"></script>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+	<link rel = "stylesheet" type = "text/css" href = "CV.css">
+	<script src = "../homeJS.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
 </head>
-<body>
+<body class = "CVBody">
+
 <!--################### -LOADER SECTION- #################-->	
+<!--################### -MUST NOT BE EDITED- #################-->
 	  <div class="load">
 	  	<div class = "loader">
 	  	<div class ="first bar"></div>
@@ -27,61 +27,65 @@
 	  	<div class ="eighth bar"></div>  
 	  </div>
 	  </div>
-<!--################### -NAVBAR SECTION- #################-->	
-	<nav>
-		<div class ="topbar">
-			<div class = "navavatar"><a href="../index.html"><img src = "../myAvatar lowres.png"></a></div><!--Avatar from www.avatarmaker.com-->
-			<div class = "welcometext"><h2>CV</h2></div>
-			<div class="hamburger">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
+<!--################### -END OF LOADER SECTION- #################-->	
+	<header>
+	<!--################### - HAMBURGER ICON- #################-->	
+
+	<div class="hamburger" onclick="sidebarFunction(this)">
+ 		 <div class="line1"></div>
+ 		 <div class="line2"></div>
+  		<div class="line3"></div>
+	</div>
+	
+
+
+	<!--################### -NAVBAR SECTION- #################-->
+	
+	<div class = "nav">
+			<div class = "navmenuul">
+				<a href="../index.html">Home</a>
+				<a href="../About/about.html">About</a>
+				<a href="../CV/CV.html">CV</a>
+				<a href="../Contact/contact.html">Contact</a>
+				<a href="../Social/social.html">Social</a>
+				<a href ="../Report/report.html">Report</a>
 			</div>
-		</div>
+		
 
-		<div class = "navmenu">
-			<ul class = "navmenuul">
-				<a href="../index.html"><li class = "home">Home</li></a>
-				<a href="../About/about.html"><li class = "about">About</li></a>
-				<a href="../CV/cv.html"><li class = "cv">CV</li></a>
-				<a href="../Contact/contact.html"><li class = "contact">Contact</li></a>
-				<a href ="../MGP/models_gp.html"><li class = "modelsgp">MGP</li></a>
-				<a href="../Social/social.html"><li class = "social">Social</li></a>
+		<!--A Separate navmenu has been used for mobile devices for optimization across mobile devices as the other one caused lags-->
+			<div class = "navmenumobile">
+				<a href="../index.html">Home</a>
+				<a href="../About/about.html">About</a>
+				<a href="../CV/CV.html">CV</a>
+				<a href="../Contact/contact.html">Contact</a>
+				<a href="../Social/social.html">Social</a>
+				<a href ="../Report/report.html">Report</a>
+			</div>
+	</div>
+	</header>
 
-			</ul>
-		</div>
-	</nav>
-<!--################### -END OF NAVBAR SECTION- #################-->	
+	<!--################### -END OF NAVBAR SECTION- #################-->
+
+
+
+
+
+
+
 
 
 
 <!--################### - CONTENT SECTION - #################-->	
 	
-	<section>
-		<div class = "block one">
-			<div class = "subblock subblockleft"></div><div class = "subblock subblockright"></div>
-		</div>
-		<div class = "backgrounddiv backgroundfirst"><span><h1 class = "heading">Education</h1></span></div>
+	<section class = "CVSection">
 
-		<div class = "block two">
-			<div class = "subblock subblockleft"></div><div class = "subblock subblockright"></div>
-		</div>
-		<div class = "backgrounddiv backgroundsecond"><span><h1 class = "heading">Higher Education</h1></span></div>
 
-		<div class = "block three">
-			<div class = "subblock subblockleft"></div><div class = "subblock subblockright"></div>
-		</div>
-		<div class = "backgrounddiv backgroundthird"><span><h1 class = "heading">What I can do?</h1></span></div>
 
-		<div class = "block four">
-			<div class = "subblock subblockleft"></div><div class = "subblock subblockright"></div>
-		</div>
-		<div class = "backgrounddiv backgroundfourth"><span><h1 class = "heading">Extra skills</h1></span></div>
 
-		<div class = "block five">
-		<div class = "subblock subblockleft"></div><div class = "subblock subblockright"></div>
-		</div>
-		<div class = "backgrounddiv backgroundfifth"><span><h1 class = "heading">There's more to come...</h1></span></div>
+
+
+
+
 
 
 
@@ -89,27 +93,14 @@
 
 <!--################### -END OF CONTENT SECTION- #################-->	
 
-	<!--################### -CONTENT SECTION JUMP TO BUTTON- #################-->	
-	
 
-	<!--################### -END OF CONTENT SECTION JUMP TO BUTTON- #################-->	
+
+
 
 
 <!--################### -	FOOTER SECTION   - #################-->	
 	
-	<footer>
-		<div class = "footer">
-			<ul class = "footerul">
-				<a href="../index.html"><li class = "home">Home</li></a>
-				<a href="../About/about.html"><li>About</li></a>
-				<a href="../CV/cv.html" class = "highlighted"><li class = "cv">CV</li></a>
-				<a href="../Contact/contact.html"><li class = "contact">Contact</li></a>
-				<a href ="models_gp.html"><li class = "modelsgp">MGP</li></a>
-				<a href="../Social/social.html"><li class = "social">Social</li></a>
-
-			</ul>
-		</div>
-	</footer>
+	
 
 
 <!--################### - END OF FOOTER SECTION - #################-->

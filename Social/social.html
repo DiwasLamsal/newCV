@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
 	<title>Social</title>
-	<link rel = "stylesheet" href="social.css" type="text/css">
-	<link rel = "stylesheet" href="../loader.css" type="text/css">
-	<link rel = "stylesheet" href="../navbar.css" type="text/css">
-	<link rel = "stylesheet" href="../footer.css" type = "text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
-	<script src ="../jquery-3.3.1.min.js"></script>
-	<script src = "../Javascript.js"></script>
-	<script src = "social.js"></script>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "../style.css">
+	<link rel = "stylesheet" type = "text/css" href = "social.css">
+	<script src = "../homeJS.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
 </head>
-<body>
+<body class = "socialBody">
+
 <!--################### -LOADER SECTION- #################-->	
-<!--################### -DO NOT EDIT- #################-->	
+<!--################### -MUST NOT BE EDITED- #################-->
 	  <div class="load">
 	  	<div class = "loader">
 	  	<div class ="first bar"></div>
@@ -29,38 +27,57 @@
 	  	<div class ="eighth bar"></div>  
 	  </div>
 	  </div>
-<!--################### -END OF LOADER SECTION- #################-->
-<!--################### -NAVBAR SECTION- #################-->	
-	<nav>
-		<div class ="topbar">
-			<div class = "navavatar"><a href="../index.html"><img src = "../myAvatar lowres.png"></a></div><!--Avatar from www.avatarmaker.com-->
-			<div class = "welcometext"><h2>Social</h2></div>
-			<div class="hamburger">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
-			</div>
-		</div>
+<!--################### -END OF LOADER SECTION- #################-->	
+	<header>
+	<!--################### - HAMBURGER ICON- #################-->	
 
-		<div class = "navmenu">
-			<ul class = "navmenuul">
-				<a href="../index.html"><li class = "home">Home</li></a>
-				<a href="../About/about.html"><li class = "about">About</li></a>
-				<a href="../CV/CV.html"><li class = "cv">CV</li></a>
-				<a href="../Contact/contact.html"><li class = "contact">Contact</li></a>
-				<a href ="../MGP/models_gp.html"><li class = "modelsgp">MGP</li></a>
-				<a href="../Social/social.html"><li class = "social">Social</li></a>
-
-			</ul>
-		</div>
-	</nav>
-<!--################### -END OF NAVBAR SECTION- #################-->	
-<!--################### - CONTENT SECTION - #################-->	
+	<div class="hamburger" onclick="sidebarFunction(this)">
+ 		 <div class="line1"></div>
+ 		 <div class="line2"></div>
+  		<div class="line3"></div>
+	</div>
 	
-	<section>
 
+
+	<!--################### -NAVBAR SECTION- #################-->
+	
+	<div class = "nav">
+			<div class = "navmenuul">
+				<a href="../index.html">Home</a>
+				<a href="../About/about.html">About</a>
+				<a href="../CV/CV.html">CV</a>
+				<a href="../Contact/contact.html">Contact</a>
+				<a href="../Social/social.html">Social</a>
+				<a href ="../Report/report.html">Report</a>
+			</div>
 		
 
+		<!--A Separate navmenu has been used for mobile devices for optimization across mobile devices as the other one caused lags-->
+			<div class = "navmenumobile">
+				<a href="../index.html">Home</a>
+				<a href="../About/about.html">About</a>
+				<a href="../CV/CV.html">CV</a>
+				<a href="../Contact/contact.html">Contact</a>
+				<a href="../Social/social.html">Social</a>
+				<a href ="../Report/report.html">Report</a>
+			</div>
+	</div>
+	</header>
+
+	<!--################### -END OF NAVBAR SECTION- #################-->
+
+
+
+
+
+
+
+
+
+
+<!--################### - CONTENT SECTION - #################-->	
+	
+	<section class = "socialSection">
 
 
 
@@ -76,21 +93,14 @@
 
 <!--################### -END OF CONTENT SECTION- #################-->	
 
+
+
+
+
+
 <!--################### -	FOOTER SECTION   - #################-->	
 	
-	<footer>
-		<div class = "footer">
-			<ul class = "footerul">
-				<a href="../index.html"><li class = "home">Home</li></a>
-				<a href="../About/about.html"><li>About</li></a>
-				<a href="../CV/CV.html"><li class = "cv">CV</li></a>
-				<a href="../Contact/contact.html"><li class = "contact">Contact</li></a>
-				<a href ="../MGP/models_gp.html"><li class = "modelsgp">MGP</li></a>
-				<a href="../Social/social.html" class = "highlighted"><li class = "social">Social</li></a>
-
-			</ul>
-		</div>
-	</footer>
+	
 
 
 <!--################### - END OF FOOTER SECTION - #################-->
