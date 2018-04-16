@@ -55,15 +55,11 @@
 	font-size: calc(.5vw + 10px);
 }
 
-.contactParagraph:nth-child(2){
-		text-align: right;
-		font-size: calc(.5vw + 7px);
-	}
 
 
 .form {
 
-	border: 15px groove #ccb089;
+	border: 13px groove #ccb089;
 	border-image-source: url('border.jpg');
 	border-image-slice: 50 60;
 	width: 85%;
@@ -120,17 +116,27 @@ form input[type=submit]{
 	.contactSection{
 		flex-direction: column;
 		height: auto;
+		max-height: 1250px;
 	}
 
 	.contactBoxOne, .contactBoxTwo {
 		width: 100%;
 
 	}
-
-	.contactParagraph:nth-child(2){
-		text-align: right;
-		font-size: calc(.5vw + 10px);
+.form {
+	width: 90%;
+}
+	.contactParagraph{
+		font-size: calc(.5vw + 10px) !important;
+		margin: 20px;
 	}
 
+
+}
+@media screen and (max-width: 480px) {
+
+	.form {
+		width: 85%;
+	}
 
 }
