@@ -1,0 +1,47 @@
+
+/********************************************************************************************************************/
+/*-----------------------------------------WELCOME--------------------------------------------------------------------*/
+/*--------------------------------------THIS IS SOCIAL--------------------------------------------------------------------*/
+/*------------------------------------------PAGE--------------------------------------------------------------------*/
+/*---------------------------------------STYLESHEET--------------------------------------------------------------------*/
+/********************************************************************************************************************/
+
+.socialBody{
+		background: url('socialBackground.jpeg');
+		background-attachment: fixed;
+		text-align: center;
+		position: absolute;
+}
+
+.socialSection {
+	margin-left: 3px;
+	margin-top: 50px;
+}
+
+
+
+.socialHeading {
+	margin: 20px;
+	font-family: 'Permanent Marker', cursive;
+	font-size: calc(1.5vw + 25px);
+	color: rgba(255,255,255,0.9);
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+
+.socialicon {
+	margin: 5px;
+	user-select: none;
+	width: 10%;
+	transition: border .3s, transform .3s;
+	border-radius: 50%;
+	border: calc(.5vw + 3px) solid rgba(0,0,0,0.1);
+	min-width: 60px;
+}
+
+.socialicon:hover {
+	transform: rotate(360deg) scale(1.1);
+
+}
