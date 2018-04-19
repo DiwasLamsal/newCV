@@ -55,29 +55,29 @@
 	width: 85%;
 	margin-top: 20vh;
 	transition: transform .7s, box-shadow .7s ease;
-	box-shadow: 5px 5px 50px;
+	box-shadow: 5px 5px 30px;
 
 }
 
 
 .CVImagesLeft{
-	transform: translateX(120px);
+	transform: translateX(100px);
 }
 
 .CVImagesRight{
-	transform: translateX(-120px);
+	transform: translateX(-100px);
 }
 
 .CVImagesLeft:hover {
-	transform: translateX(120px) scale(1.15);
-	box-shadow: 10px 10px 100px;
+	transform: translateX(100px) scale(1.1);
+	box-shadow: 15px 15px 80px;
 
 }
 
 
 .CVImagesRight:hover {
-	transform: translateX(-120px) scale(1.15);
-	box-shadow: 10px 10px 100px;
+	transform: translateX(-100px) scale(1.1);
+	box-shadow: 15px 15px 80px;
 }
 
 
