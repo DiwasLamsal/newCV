@@ -13,6 +13,7 @@
 		position: absolute;
 		background-size: cover;
 		background-position: 5% 10%;
+		overflow-x: hidden;		
 }
 
 .socialSection {
