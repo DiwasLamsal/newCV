@@ -78,6 +78,7 @@
 
 /**************************************************************************************************************************/
 
+
 #homebody{
 	background: rgb(0,0,0);
 	overflow: hidden;
@@ -136,7 +137,7 @@
 	border-right: 5px inset rgba(200, 200, 100, 0.8);
 	box-shadow: 5px 5px 100px;
 	margin-left: -5px;
-	background: url('navBackground.jpeg');
+	background: url('navBackground.jpeg'); /*from Pexels (https://www.pexels.com/search/background/)*/
 	z-index: 10;
 }
 
@@ -159,7 +160,6 @@
 		padding: calc(3vw + 15px);
 		font-size:calc(1.5vw + 5px); 
 		transition: color 1s, background 1s;
-
 	}
 
 	.navmenuul a:hover, .navmenumobile a:hover{
