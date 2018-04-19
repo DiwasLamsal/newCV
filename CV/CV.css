@@ -36,6 +36,7 @@
 	background-size: 4000% 4000%;
 }
 
+
 @keyframes CVGradientAnimation {
 	0% {background-position: 0% 50%}
 	50% {background-position: 100% 50%}
@@ -43,26 +44,30 @@
 }
 
 .CVImages{
-	border: 20px ridge rgba(0,0,0,0.5);
-	width: 70%;
-	margin-top: 20vh;
+	border: 10px solid rgba(255,255,255,0.3);
+	width: 75%;
+	margin-top: 18vh;
 	transition: transform 1s ease;
+	box-shadow: 10px 10px 100px;
 }
 
 
 .CVImagesLeft{
 	transform: translateX(150px);
-	z-index: -100;
 }
 
 .CVImagesRight{
 	transform: translateX(-150px);
 }
 
-.CVRow:hover  .CVImages{
-	transform: none;
+.CVBlock:hover .CVImagesLeft, .CVImagesLeft:hover {
+	transform: translateX(150px) scale(1.15);
+
 }
 
+.CVBlock:hover .CVImagesRight, .CVImagesRight:hover {
+	transform: translateX(-150px) scale(1.15);
+}
 
 
 
@@ -105,7 +110,26 @@
 	height: 100%;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CHROME SCROLLBAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: floralwhite; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightslategrey; 
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkslategrey; 
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MEDIA QUERIES FOR CV~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 

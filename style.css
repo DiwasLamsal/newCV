@@ -47,6 +47,8 @@
 		animation-name: loadinganimation;
 		animation-duration: .72s;
 		animation-iteration-count: infinite;
+		border-top-left-radius: 30px;
+		border-bottom-right-radius: 30px;
 		
 	}
 
@@ -102,6 +104,7 @@
 		margin-top: 3px;
 		transition:transform .3s;
 		box-shadow: 1px 1px 10px;
+		border-radius: 10px;
 	}
 
 	.change .line1{
