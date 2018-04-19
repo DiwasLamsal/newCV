@@ -28,18 +28,20 @@
 	animation: GradientAnimation 10s ease infinite;
 }
 
+
+@keyframes GradientAnimation {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 50% 100% }
+}
+
+
 .aboutSectionOne img{
 	border: 20px ridge rgba(0,0,0,0.5);
 	width: 40%;
 	margin:auto;
 	margin-top: calc(2vw + 80px);
 
-}
-
-@keyframes GradientAnimation {
-	0% {background-position: 0% 50%}
-	50% {background-position: 100% 50%}
-	100% {background-position: 50% 100% }
 }
 
 

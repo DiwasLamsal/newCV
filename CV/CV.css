@@ -1,0 +1,103 @@
+
+/********************************************************************************************************************/
+
+/*-----------------------------CV SECTION STARTS HERE------------------------------------------------------------*/
+
+/********************************************************************************************************************/
+
+.CVSection {
+	background: rgb(250, 250, 235);
+}
+
+.CVRow {
+	width: 100%;
+	display: flex;
+}
+
+.CVBlock {
+	width: 50%;
+	height: 100vh;
+	text-align: center;
+}
+
+
+
+.CVBlockImage {
+	background: linear-gradient(to bottom left, seagreen, rosybrown, saddlebrown);
+	background-size: 4000% 4000%;
+	animation: CVGradientAnimation 8s ease infinite;
+}
+
+.CVBlockImage:nth-child(2){
+	background: linear-gradient(to bottom left, springgreen, purple);
+	background-size: 4000% 4000%;
+}
+
+@keyframes CVGradientAnimation {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 50% 100% }
+}
+
+.CVImages{
+	border: 20px ridge rgba(0,0,0,0.5);
+	width: 75%;
+	margin-top: 20vh;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~THE BLOCKS SEPARATOR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CVSeparator {
+	width: 100%;
+	height: 150px;
+	margin:auto;
+	border-top: 5px solid rgba(0,0,0,0.5);
+	border-bottom: 5px solid rgba(0,0,0,0.5);
+	
+}
+
+
+.CVSeparatorOne{
+	background:	url('teacher.jpg');
+	background-attachment: fixed;
+	background-position:center;
+	
+}
+
+.CVSeparatorTwo{
+	background: url('macbookondesk.jpg');
+	background-attachment: fixed;
+	background-position: top;
+}
+
+
+.CVSeparatorThree{
+	background: url('javascript.jpg');
+	background-attachment: fixed;
+	background-position: bottom;
+}
+
+
+.CVSeparatorOverlay{
+	background: rgba(255, 100, 250,0.3);
+	height: 100%;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MEDIA QUERIES FOR CV~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+@media screen and (max-width: 750px) {
+
+	.CVRow{flex-direction: column;}
+
+	.CVBlock{width: 100%; height: 80vh;}
+
+	.CVBlockImage{order: 1;}
+
+	.CVBlockText{order: 2;}
+
+	.CVImages{width: 70%; max-width: 350px; margin-top: 15vh;}
+}
+
