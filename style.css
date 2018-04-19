@@ -47,8 +47,7 @@
 		animation-name: loadinganimation;
 		animation-duration: .72s;
 		animation-iteration-count: infinite;
-		border-top-left-radius: 30px;
-		border-bottom-right-radius: 30px;
+		border-radius: 5px;
 		
 	}
 
