@@ -139,7 +139,7 @@
   color: white;
   border-radius: 10px;
   background: rgb(50,180,235);
-  transition: width 1s ease-out;
+  transition: width 1s, padding 1s ease-out;
 }
 
 .skillSLC{
@@ -155,19 +155,25 @@
 
 
 .skillHTML, .skillCSS, .skillJavaScript{
-	width: 1%;
+	width: 0%;
+	padding-right: 0;
+	overflow: hidden;
 }
+
 
 .CVRow:hover .skillHTML{
 	width: 92%;
+	padding-right: 20px;
 }
 
 .CVRow:hover .skillCSS{
 	width: 85%;
+	padding-right: 20px;
 }
 
 .CVRow:hover .skillJavaScript{
 	width: 65%;
+	padding-right: 20px;
 }
 
 
@@ -264,6 +270,11 @@
 		margin: auto;
 		text-align: center;
 	}
+
+	.skill {
+		padding-right: 20px;
+	}
+
 	.skillBar{
 		width: 90%;
 	}
@@ -279,8 +290,6 @@
 	.skillJavaScript{
 		width: 65%;
 	}
-
-
 
 
 }
