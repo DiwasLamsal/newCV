@@ -248,7 +248,7 @@
 
 	.CVSeparator {height: 80px;}
 
-	.CVBlock{width: 100%; height: 108vh;}
+	.CVBlock{width: 100%; height: 106vh;}
 
 	.CVBlockImage{order: 1; height: 70vh;}
 
@@ -260,11 +260,11 @@
 
 	.CVImagesRight{transform: none;}
 
-	.CVBlock:hover .CVImagesLeft, .CVImagesLeft:hover {
+	.CVRow:hover .CVImagesLeft, .CVImagesLeft:hover {
 		transform: none;
 	}
 
-	.CVBlock:hover .CVImagesRight, .CVImagesRight:hover {
+	.CVRow:hover .CVImagesRight, .CVImagesRight:hover {
 		transform: none;
 	}
 
