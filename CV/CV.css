@@ -246,7 +246,7 @@
 
 	.CVRow{flex-direction: column;}
 
-	.CVSeparator {height: 80px;}
+	.CVSeparator {display: none;}
 
 	.CVBlock{width: 100%; height: 106vh;}
 
