@@ -18,12 +18,19 @@
 }
 
 .CVBlock {
-	width: 50%;
 	height: 100vh;
 	text-align: center;
 }
 
+.CVBlockImage{
+	width: 45%;
+}
 
+.CVBlockText{
+	width: 55%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~THE IMAGE BLOCKS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .CVBlockImage {
 	background: linear-gradient(to bottom left, seagreen, rosybrown, saddlebrown);
@@ -45,30 +52,123 @@
 
 .CVImages{
 	border: 10px solid rgba(255,255,255,0.3);
-	width: 75%;
-	margin-top: 18vh;
-	transition: transform 1s ease;
-	box-shadow: 10px 10px 100px;
+	width: 85%;
+	margin-top: 20vh;
+	transition: transform .7s, box-shadow .7s ease;
+	box-shadow: 5px 5px 50px;
+
 }
 
 
 .CVImagesLeft{
-	transform: translateX(150px);
+	transform: translateX(120px);
 }
 
 .CVImagesRight{
-	transform: translateX(-150px);
+	transform: translateX(-120px);
 }
 
-.CVBlock:hover .CVImagesLeft, .CVImagesLeft:hover {
-	transform: translateX(150px) scale(1.15);
+.CVImagesLeft:hover {
+	transform: translateX(120px) scale(1.15);
+	box-shadow: 10px 10px 100px;
 
 }
 
-.CVBlock:hover .CVImagesRight, .CVImagesRight:hover {
-	transform: translateX(-150px) scale(1.15);
+
+.CVImagesRight:hover {
+	transform: translateX(-120px) scale(1.15);
+	box-shadow: 10px 10px 100px;
 }
 
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~THE TEXT BLOCKS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CVBlockTextRight{
+	text-align: right;
+}
+
+.CVBlockTextLeft{
+	text-align: left;
+}
+
+.CVHeading{
+	text-align: center;
+	color: rgb(50,180,235);
+	margin-top: 40px;
+	font-family: 'Permanent Marker', cursive;
+	font-size: calc(1.5vw + 25px);
+	margin-bottom: 15px;
+
+}
+
+
+
+.CVText{
+	font-family: 'ABeeZee', sans-serif;
+	font-size: calc(.5vw + 10px);
+}
+
+
+.CVTextContentRight{
+	width: 70%;
+	padding-left: 80px;
+	margin: auto;
+}
+
+.CVTextContentLeft{
+	width: 70%;
+	padding-right: 80px;
+	margin: auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~THE SKILLS AND SKILL BAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.skillBar{
+  margin: auto;
+  width: 98%;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom:5px;
+}
+
+.skill{
+  text-align: right;
+  padding-right: 20px;
+  line-height: 50px;
+  color: white;
+  border-radius: 10px;
+  background: rgb(50,180,235);
+  transition: width 1s ease-out;
+}
+
+.skillSLC{
+	width: 81%;
+	overflow: hidden;
+}
+
+.skillBarSkillSection{
+	width: 80%;
+	margin-left: 5px;
+}
+
+
+
+.skillHTML, .skillCSS, .skillJavaScript{
+	width: 1%;
+}
+
+.CVRow:hover .skillHTML{
+	width: 92%;
+}
+
+.CVRow:hover .skillCSS{
+	width: 85%;
+}
+
+.CVRow:hover .skillJavaScript{
+	width: 65%;
+}
 
 
 
@@ -106,7 +206,7 @@
 
 
 .CVSeparatorOverlay{
-	background: rgba(255, 100, 250,0.3);
+	background: rgba(0, 0, 0,0.5);
 	height: 100%;
 }
 
@@ -138,7 +238,7 @@
 
 	.CVRow{flex-direction: column;}
 
-	.CVBlock{width: 100%; height: 80vh;}
+	.CVBlock{width: 100%; height: 83vh;}
 
 	.CVBlockImage{order: 1;}
 
@@ -149,5 +249,39 @@
 	.CVImagesLeft{transform: none;}
 
 	.CVImagesRight{transform: none;}
+
+	.CVBlock:hover .CVImagesLeft, .CVImagesLeft:hover {
+		transform: none;
+	}
+
+	.CVBlock:hover .CVImagesRight, .CVImagesRight:hover {
+		transform: none;
+	}
+
+	.CVTextContentRight, .CVTextContentLeft{
+		width: 98%;
+		padding: 0px;
+		margin: auto;
+		text-align: center;
+	}
+	.skillBar{
+		width: 90%;
+	}
+
+	.skillHTML{
+		width: 92%;
+	}
+
+	 .skillCSS{
+		width: 85%;
+	}
+
+	.skillJavaScript{
+		width: 65%;
+	}
+
+
+
+
 }
 
