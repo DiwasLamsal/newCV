@@ -248,13 +248,13 @@
 
 	.CVSeparator {height: 80px;}
 
-	.CVBlock{width: 100%; height: 100vh;}
+	.CVBlock{width: 100%; height: 120vh;}
 
 	.CVBlockImage{order: 1; height: 70vh;}
 
 	.CVBlockText{order: 2;}
 
-	.CVImages{max-width: 350px; margin-top: 10vh;}
+	.CVImages{max-width: 350px; margin-top: 13vh;}
 
 	.CVImagesLeft{transform: none;}
 
