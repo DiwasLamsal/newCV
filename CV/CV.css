@@ -44,10 +44,9 @@
 
 .CVImages{
 	border: 20px ridge rgba(0,0,0,0.5);
-	width: 80%;
+	width: 70%;
 	margin-top: 20vh;
-	transition: transform .3s;
-
+	transition: transform 1s ease;
 }
 
 
@@ -121,11 +120,10 @@
 
 	.CVBlockText{order: 2;}
 
-	.CVImages{width: 70%; max-width: 350px; margin-top: 15vh;}
+	.CVImages{max-width: 350px; margin-top: 15vh;}
 
 	.CVImagesLeft{transform: none;}
 
-.CVImagesRight{transform: none;}
-
+	.CVImagesRight{transform: none;}
 }
 
