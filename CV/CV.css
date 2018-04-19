@@ -54,9 +54,8 @@
 	border: 10px solid rgba(255,255,255,0.3);
 	width: 85%;
 	margin-top: 20vh;
-	transition: transform .7s, box-shadow .7s ease;
+	transition: transform .7s, box-shadow .7s ease-out;
 	box-shadow: 5px 5px 30px;
-
 }
 
 
@@ -68,14 +67,13 @@
 	transform: translateX(-100px);
 }
 
-.CVImagesLeft:hover {
-	transform: translateX(100px) scale(1.1);
+.CVRow:hover .CVImagesLeft{
+	transform: translateX(100px) scale(1.13);
 	box-shadow: 15px 15px 80px;
-
 }
 
 
-.CVImagesRight:hover {
+.CVRow:hover .CVImagesRight{
 	transform: translateX(-100px) scale(1.1);
 	box-shadow: 15px 15px 80px;
 }
@@ -154,7 +152,7 @@
 
 
 
-.skillHTML, .skillCSS, .skillJavaScript{
+.skillHTML, .skillCSS, .skillJavaScript, .skillPhotoshop{
 	width: 0%;
 	padding-right: 0;
 	overflow: hidden;
@@ -176,6 +174,10 @@
 	padding-right: 20px;
 }
 
+.CVRow:hover .skillPhotoshop{
+	width: 55%;
+	padding-right: 20px;
+}
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~THE BLOCKS SEPARATOR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -225,7 +227,7 @@
 
 
 ::-webkit-scrollbar-track {
-    background: floralwhite; 
+    background: bisque; 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -244,13 +246,15 @@
 
 	.CVRow{flex-direction: column;}
 
-	.CVBlock{width: 100%; height: 83vh;}
+	.CVSeparator {height: 80px;}
 
-	.CVBlockImage{order: 1;}
+	.CVBlock{width: 100%; height: 100vh;}
+
+	.CVBlockImage{order: 1; height: 70vh;}
 
 	.CVBlockText{order: 2;}
 
-	.CVImages{max-width: 350px;}
+	.CVImages{max-width: 350px; margin-top: 10vh;}
 
 	.CVImagesLeft{transform: none;}
 
@@ -291,6 +295,9 @@
 		width: 65%;
 	}
 
+	.skillPhotoshop{
+		width: 55%;
+	}
 
 }
 

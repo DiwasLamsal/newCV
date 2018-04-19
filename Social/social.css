@@ -19,6 +19,7 @@
 .socialSection {
 	margin-left: 3px;
 	margin-top: 50px;
+	height: auto;
 }
 
 
@@ -49,9 +50,22 @@
 
 }
 
+/*---------------------------------------MEDIA QUERIES FOR SOCIAL PAGE---------------------------------------------------------*/
+
+
 @media screen and (max-width: 650px) {
     .socialBody {
-    	background: url('socialBackground.jpeg');
-		background-attachment: fixed;
-		background-position: 30% 10%;
-    }
+    background: rgb(128,0,128);
+
+}
+	.socialicon:hover {
+	transform: none;
+
+}
+
+.socialSection {
+	height: auto;
+}
+
+
+}
