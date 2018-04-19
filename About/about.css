@@ -6,7 +6,7 @@
 /********************************************************************************************************************/
 
 .aboutBody{
-	overflow: hidden;
+	
 }
 
 .aboutSection {
@@ -14,7 +14,7 @@
 	flex-direction: row;
 	justify-content: center;
 	width: 100%;
-	height: 700px;
+	height: 100vh;
 	text-align: center;
 	background: rgba(250, 250, 230, 0.2);
 }
