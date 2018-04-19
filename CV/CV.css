@@ -47,11 +47,13 @@
 	width: 80%;
 	margin-top: 20vh;
 	transition: transform .3s;
+
 }
 
 
 .CVImagesLeft{
-	transform: translateX(150px);;
+	transform: translateX(150px);
+	z-index: -100;
 }
 
 .CVImagesRight{
@@ -72,8 +74,8 @@
 	width: 100%;
 	height: 150px;
 	margin:auto;
-	border-top: 5px solid rgba(0,0,0,0.5);
-	border-bottom: 5px solid rgba(0,0,0,0.5);
+	border-top: 5px solid rgba(0,0,0,0.7);
+	border-bottom: 5px solid rgba(0,0,0,0.8);
 	
 }
 

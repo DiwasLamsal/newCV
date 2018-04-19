@@ -135,7 +135,7 @@
 	box-shadow: 5px 5px 100px;
 	margin-left: -5px;
 	background: url('navBackground.jpeg');
-
+	z-index: 10;
 }
 
 
