@@ -1,4 +1,3 @@
-
 /********************************************************************************************************************/
 /*-----------------------------------------WELCOME--------------------------------------------------------------------*/
 /*--------------------------------------THIS IS ABOUT--------------------------------------------------------------------*/
@@ -21,7 +20,7 @@
 }
 
 .aboutSectionOne{
-	width: 50%;
+	width: 35%;
 	height: 100%;
 	background: linear-gradient(to bottom left, purple, #23A6D5, #23D5AB);
 	background-size: 1000% 1000%;
@@ -38,7 +37,7 @@
 
 .aboutSectionOne img{
 	border: 20px ridge rgba(0,0,0,0.5);
-	width: 40%;
+	width: 60%;
 	margin:auto;
 	margin-top: calc(2vw + 80px);
 
@@ -47,7 +46,7 @@
 
 .aboutHeading {
 	margin-top: 20px;
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Black Han Sans', sans-serif;
 	font-size: calc(1.5vw + 25px);
 	color: white;
 	margin-bottom: 50px;
@@ -60,7 +59,7 @@
 
 
 .aboutSectionTwo {
-	width: 50%;
+	width: 65%;
 	height: 500px;
 }
 
