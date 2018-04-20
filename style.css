@@ -222,7 +222,6 @@
 
 
 .CVButton {
-
 	margin: auto;
 	margin-top: 50px;
 	width: auto;
@@ -230,7 +229,8 @@
 	font-size: calc(1.5vw + 5px);
 }
 
-.CVButton > a {
+
+.CVButton a {
 	color: white;
 	text-decoration: none;
 	background: rgb(250, 130, 0);
@@ -239,12 +239,12 @@
 	padding-top: calc(1vw + 5px);
 	padding-bottom: calc(1vw + 5px);
 	border-radius: 3px;
-	transition: .5s;
-	box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+	transition: .8s;
+	box-shadow: 15px 15px 40px rgba(0,0,0,0.8);
 }
 
-.CVButton > a:hover {
-	background: rgb(205, 100, 0);
+.CVButton a:hover {
+	background: rgb(255, 150, 0);
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
 
