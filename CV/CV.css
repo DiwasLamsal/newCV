@@ -248,13 +248,13 @@
 
 	.CVSeparator {display: none;}
 
-	.CVBlock{width: 100%; height: 106vh;}
+	.CVBlock{width: 100%; height: auto;}
 
-	.CVBlockImage{order: 1; height: 70vh;}
+	.CVBlockImage{order: 1; height: auto;}
 
-	.CVBlockText{order: 2;}
+	.CVBlockText{order: 2; margin-top: 1vh; margin-bottom: 8vh;}
 
-	.CVImages{max-width: 350px; margin-top: 13vh;}
+	.CVImages{max-width: 350px; margin-top: 10vh; margin-bottom: 10vh;}
 
 	.CVImagesLeft{transform: none;}
 
@@ -292,7 +292,7 @@
 	}
 
 	.skillJavaScript{
-		width: 65%;
+		width: 60%;
 	}
 
 	.skillPhotoshop{

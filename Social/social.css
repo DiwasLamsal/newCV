@@ -64,7 +64,8 @@
 }
 
 .socialSection {
-	height: 110vh;
+	height: auto;
+	margin-bottom: 15vh;
 }
 
 
