@@ -231,7 +231,7 @@
 }
 
 .CVButton > a {
-	color: rgb(255,250,200);
+	color: rgb(255,250,230);
 	text-decoration: none;
 	background: none;
 	padding-right: 20px;
@@ -239,7 +239,7 @@
 	padding-top: calc(.7vw + 5px);
 	padding-bottom: calc(.7vw + 5px);
 	border-radius: 3px;
-	transition: .5s;
+	transition: .3s;
 	font-family: Sans-Serif;
 	font-weight: bold;
 	border: 3px solid rgb(245, 160, 0);
@@ -248,6 +248,7 @@
 .CVButton > a:hover {
 	background: rgb(245, 160, 0);
 	color: white;
+	border: none;
 }
 
 
