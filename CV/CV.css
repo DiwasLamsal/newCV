@@ -60,21 +60,21 @@
 
 
 .CVImagesLeft{
-	transform: translateX(100px);
+	transform: translateX(120px);
 }
 
 .CVImagesRight{
-	transform: translateX(-100px);
+	transform: translateX(-120px);
 }
 
 .CVRow:hover .CVImagesLeft{
-	transform: translateX(100px) scale(1.13);
+	transform: translateX(120px) scale(1.1);
 	box-shadow: 15px 15px 80px;
 }
 
 
 .CVRow:hover .CVImagesRight{
-	transform: translateX(-100px) scale(1.1);
+	transform: translateX(-120px) scale(1.1);
 	box-shadow: 15px 15px 80px;
 }
 
@@ -97,7 +97,7 @@
 	font-family: 'Black Han Sans', sans-serif;
 	font-size: calc(1.5vw + 25px);
 	margin-bottom: 15px;
-
+	user-select: none;
 }
 
 
